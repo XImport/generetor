@@ -1,0 +1,267 @@
+body{
+    margin-top: 2%;
+}
+
+
+
+
+
+.text-tile{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 21px;
+    letter-spacing: -1.4px;
+    word-spacing: -0.6px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+.content-upload{
+    margin: 30px;
+
+}
+
+.foo {
+    display: block;
+    position: relative;
+    width: 300px;
+    margin: auto;
+    cursor: pointer;
+    border: 0;
+    height: 60px;
+    border-radius: 5px;
+    outline: 0;
+}
+.foo:hover:after {
+    background: #5978f8;
+}
+.foo:after {
+    transition: 200ms all ease;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    background: #3c5ff4;
+    text-shadow: 0 2px 0 rgba(0,0,0,.2);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: 'Upload Rapport Livraison';
+    line-height: 60px;
+    border-radius: 5px;
+}
+
+
+.select-day{
+  font-family: "Arial Black", Gadget, sans-serif;
+font-size: 17px;
+letter-spacing: -1.6px;
+word-spacing: -0.8px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+padding: 15px;
+}
+
+
+
+
+  .loader {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -2%;
+  }
+  
+  .circular {
+    animation: rotate 2s linear infinite;
+    height: 100px;
+    position: relative;
+    width: 100px;
+  }
+  
+  .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke: #B6463A;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124;
+    }
+  }
+  @keyframes color {
+    100%, 0% {
+      stroke: #d62d20;
+    }
+    40% {
+      stroke: #0057e7;
+    }
+    66% {
+      stroke: #008744;
+    }
+    80%, 90% {
+      stroke: #ffa700;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+button {
+      margin-top: 15%;
+      pointer-events: auto;
+      cursor: pointer;
+      background-color: #000;
+      border: none;
+      padding: 1.5rem 3rem;
+      /* margin: 40%; */
+    /* margin-top: 10%; */
+      font-family: inherit;
+      font-size: inherit;
+      position: relative;
+      display: inline-block;
+  }
+  
+  
+  
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  button.learn-more {
+    width: 12rem;
+    height: auto;
+  }
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+  }
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  button:hover .circle {
+    width: 100%;
+  }
+  button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+  }
+  button:hover .button-text {
+    color: #fff;
+  }
+  
+  
+
+
+#Success{
+  font-size: 15px;
+}
+
+

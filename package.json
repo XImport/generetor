@@ -1,0 +1,45 @@
+{
+    "name": "generator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron .",
+        "runpkg": "electron-packager .",
+        "build-installer": "electron-builder"
+    },
+    "repository": {
+        "type": "git",
+        "url": "n"
+    },
+    "author": "Hamza Nouinou",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^16.0.2",
+        "electron-reloader": "^1.2.1",
+        "eslint": "^8.4.1",
+        "electron-builder": "^22.8.0"
+    },
+    "dependencies": {
+        "child_process": "^1.0.2",
+        "electron-packager": "^15.4.0",
+        "prettier": "^2.5.0"
+    },
+    "build": {
+        "appId": "generator",
+        "win": {
+            "target": [
+                "nsis"
+            ]
+
+        },
+        "nsis": {
+
+
+            "uninstallDisplayName": "generator",
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true
+        }
+    }
+}
