@@ -3,7 +3,7 @@ const { ipcRenderer } = require("electron");
 // for fast startup you should disable  this option
 // this is just from devlopping purposes only adv : hot reload neg : slow startup loading
 // try {
-//   require('electron-reloader')(module)
+//     require('electron-reloader')(module)
 // } catch (_) {}
 
 const createWindow = () => {
