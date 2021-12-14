@@ -13,7 +13,7 @@ i basically takes rapport livraison and day that you want to see how much turnov
 
 ## Run Time
 #### method #1:
-  you can run the script in cli mode by just running the Engine/Script.py rapport livraison file day 
+  you can run the script in cli mode by just running the Engine/runner.py rapport livraison file day 
 
 #### method #2:
   you can run the gui version by runing npm install && npm start
