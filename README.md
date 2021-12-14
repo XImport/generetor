@@ -17,9 +17,9 @@ i basically takes rapport livraison and day that you want to see how much turnov
 
 #### method #2:
   you can run the gui version by runing npm install && npm start
-![ScreenShot](https://raw.githubusercontent.com/XImport/generator/master/assests/imgs/Capture%20d%E2%80%99%C3%A9cran%202021-12-01%20132135.jpg?token=AMYPKRPOXYGM5ZXD7NPNO6DBU6H2I)
-![ScreenShot](https://raw.githubusercontent.com/XImport/generator/master/assests/imgs/Capture%20d%E2%80%99%C3%A9cran%202021-12-01%20132353.jpg?token=AMYPKRJOTEWQ5VBOHZX4H7DBU6ICW)
-![ScreenShot](https://raw.githubusercontent.com/XImport/generator/master/assests/imgs/Capture%20d%E2%80%99%C3%A9cran%202021-12-01%20132406.jpg?token=AMYPKRKN32SOL5EPKNDVMWTBU6ID2)
+![ScreenShot](https://raw.githubusercontent.com/XImport/generetor/master/assests/imgs/Capture%20d%E2%80%99%C3%A9cran%202021-12-01%20132135.jpg)
+![ScreenShot](https://raw.githubusercontent.com/XImport/generetor/master/assests/imgs/Capture%20d%E2%80%99%C3%A9cran%202021-12-01%20132353.jpg)
+![ScreenShot](https://raw.githubusercontent.com/XImport/generetor/master/assests/imgs/Capture%20d%E2%80%99%C3%A9cran%202021-12-01%20132406.jpg)
 
 
 
