@@ -1,5 +1,6 @@
 body {
     margin-top: 2%;
+    overflow-y: hidden;
 }
 
 .text-tile {
@@ -239,6 +240,6 @@ button:hover .button-text {
     font-size: 15px;
 }
 
-.dark-mode {
-    display: block;
+.btn-lg {
+    width: 50%;
 }
