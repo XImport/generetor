@@ -16,6 +16,7 @@ from Engine.clients import ClientwithM3, Clientwithtonne, Clients
 from Engine.pourcentage import PourcentageFacturation, PourcentageNonFacturation
 from Engine.products import TypesFilter, PdtTypes
 from Engine.date import DateHandler
+from Engine.chargetime import ChargeTime
 
 
 class Main:
@@ -44,7 +45,8 @@ class Main:
             #############################################################################################################
             dates = DateHandler(excel)
             ticket = excel["N° Ticket"]
-            chargeTime = excel[excel.columns[3]]
+            chargeTime = ChargeTime(excel)
+            # chargeTime = excel.columns[3]
             bonneLiv = excel["Bon de Livraison"]
             matrecule = excel["Véhicule"]
             bonneCom = excel["Bon de commande"]
@@ -56,7 +58,7 @@ class Main:
             produits = excel["Produit"]
             net = excel["Net"]
             Qtem3 = excel["Quantité en M3"]
-            Qtet = excel[excel.columns[14]]
+            Qtet = excel.columns[14]
 
             prix_with_m3 = ClientwithM3(globalclients, db_clts, produits.to_list())
             prix_with_tonne = Clientwithtonne(
