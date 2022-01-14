@@ -58,7 +58,8 @@ class Main:
             produits = excel["Produit"]
             net = excel["Net"]
             Qtem3 = excel["Quantité en M3"]
-            Qtet = excel.columns[14]
+            Qtet =excel[excel.columns[14]]
+            # print(Qtet)
 
             prix_with_m3 = ClientwithM3(globalclients, db_clts, produits.to_list())
             prix_with_tonne = Clientwithtonne(
@@ -116,10 +117,10 @@ class Main:
             )  # B (Better)
 
             data.to_excel(
-                r"C:\Users\Hamza\Documents\Automation\GeneratedOutput.xlsx", index=False
+                r"C:\Users\ADMIN\Documents\Automation\GeneratedOutput.xlsx", index=False
             )
             wb = openpyxl.load_workbook(
-                r"C:\Users\Hamza\Documents\Automation\GeneratedOutput.xlsx"
+                r"C:\Users\ADMIN\Documents\Automation\GeneratedOutput.xlsx"
             )
             ws = wb["Sheet1"]
             for rows in ws.iter_rows(min_row=1, max_row=1, min_col=1):
@@ -128,7 +129,7 @@ class Main:
                         start_color="FFFF00", end_color="FFFF00", fill_type="solid"
                     )
 
-            wb.save(r"C:\Users\Hamza\Documents\Automation\GeneratedOutput.xlsx")
+            wb.save(r"C:\Users\ADMIN\Documents\Automation\GeneratedOutput.xlsx")
 
           
         except ValueError:
